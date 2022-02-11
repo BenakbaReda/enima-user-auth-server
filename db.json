@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "email": "nabiha@enima.com",
+      "password": "$2a$10$L142N2IgtHSE.80Cu9CljOnppDF0pUlWxdpjNhQAhQZR9NjuFQ18m",
+      "id": 1
+    },
+    {
+      "email": "nabih12a@enima.com",
+      "password": "$2a$10$XcQUkh69xr9pmsFiawtkn.ckClt0AgeKvka4V2cj8zOveiQSMUxMC",
+      "id": 2
+    }
+  ]
+}
