@@ -29,11 +29,7 @@ const middlewares = jsonServer.defaults({
     });
 
 const port = process.env.PORT || 3001;
-
-const origineServer_dev= ['http://127.0.0.1:4200','*',  'http://localhost:4200'];
-const origineServer_Prod= ['https://enima-eshopping.herokuapp.com'];
-
-const  isProd=true;
+const origineServer_Prod= ['https://enima-eshopping.herokuapp.com', '*' ];
 // /!\ Bind the router db to the app
 server.db = router.db
 
@@ -43,9 +39,7 @@ server.db = router.db
 
 server.use((req, res, next) => {
 
-  const allowedOrigins = origineServer_dev;
-  if(isProd==true)
-     allowedOrigins =  origineServer_Prod;
+  const allowedOrigins = origineServer_Prod;
   const origin = req.headers.origin;
   if (allowedOrigins.includes(origin)) {
        res.setHeader('Access-Control-Allow-Origin', origin);
