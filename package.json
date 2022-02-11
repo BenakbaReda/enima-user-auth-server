@@ -1,11 +1,14 @@
 {
-  "name": "server-jwt-auth",
+  "name": "server-jwt-auth-deploy",
   "version": "1.0.0",
-  "description": "json server auth with jwt",
+  "description": "Simple json server auth with jwt database to deploy to the host of your choice",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
+  "keywords": [
+    "json-server ,wt-auth ,heroku, node, REST API"
+  ],
   "author": "reda amine",
   "license": "MIT",
   "dependencies": {
@@ -14,3 +17,4 @@
     "json-server-auth": "^2.1.0"
   }
 }
+
