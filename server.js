@@ -56,7 +56,7 @@ server.use((req, res, next) => {
 server.use(function (req, res, next) {
   'use strict';
 
-  res.header('Access-Control-Allow-Origin', ['https://enima-eshopping.herokuapp.com','http://enima-eshopping.herokuapp.com' ]);
+  res.header('Access-Control-Allow-Origin', ['https://enima-eshopping.herokuapp.com']);
 
   if (req.headers['access-control-request-method']) {
       res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
