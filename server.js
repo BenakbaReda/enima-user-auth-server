@@ -29,52 +29,28 @@ const middlewares = jsonServer.defaults({
     });
 
 const port = process.env.PORT || 3001;
-
-const origineServer_dev= ['http://127.0.0.1:4200','*',  'http://localhost:4200'];
-const origineServer_Prod= ['https://enima-eshopping.herokuapp.com'];
-
-const  isProd=true;
+const origineServer_Prod= ['https://enima-eshopping.herokuapp.com' ];
 // /!\ Bind the router db to the app
 server.db = router.db
 
 // Add headers
 
  
-/*
+
 server.use((req, res, next) => {
 
-  const allowedOrigins = origineServer_dev;
-   
+  const allowedOrigins = origineServer_Prod;
   const origin = req.headers.origin;
   if (allowedOrigins.includes(origin)) {
        res.setHeader('Access-Control-Allow-Origin', origin);
   }
-
+  //res.header('Access-Control-Allow-Origin', 'http://127.0.0.1:4200');
   res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
   res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   res.header('Access-Control-Allow-Credentials', true);
   return next();
 });
- */
-
-server.use(function (req, res, next) {
-  'use strict';
-
-  res.header('Access-Control-Allow-Origin', '*');
-
-  if (req.headers['access-control-request-method']) {
-      res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-  }
-  if (req.headers['access-control-request-headers']) {
-      res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-  }
-
-  if (req.method === 'OPTIONS') {
-      res.sendStatus(200);
-  } else  {
-      next();
-  }
-});
+ 
 
 // You must apply the auth middleware before the router
 server.use(auth)
