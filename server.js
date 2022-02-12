@@ -10,7 +10,7 @@ const middlewares = jsonServer.defaults({
     });
 const args = process.argv;
 const port = process.env.PORT || 3001;
-const origineServer= ['https://enima-eshopping.herokuapp.com','http://localhost:4200/','http://127.0.0.1:4200/' ];
+const origineServer= ['https://enima-eshopping.herokuapp.com','http://localhost:4200','http://127.0.0.1:4200' ];
 
 let usedIdx=1; 
 
@@ -37,7 +37,6 @@ server.db = router.db
 server.use(function (req, res, next) {
   'use strict';
   res.header('Access-Control-Allow-Origin', origineServer[usedIdx] );  
-  console.log( origineServer[usedIdx]   );
   if (req.headers['access-control-request-method']) {
       res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
   }

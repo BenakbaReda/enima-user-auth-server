@@ -1,5 +1,11 @@
 {
   "users": [
-    
+    {
+      "email": "reda_amine@ssenimashoping.com",
+      "password": "$2a$10$scrVtRzpvkkhXmwWKkL9u./cDcj1ZHCaLE2VHWjwvOOcJwdxjj7Gm",
+      "username": "reda_amine",
+      "phone": "0540506935",
+      "id": 1
+    }
   ]
 }
