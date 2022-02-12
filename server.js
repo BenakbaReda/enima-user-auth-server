@@ -61,7 +61,8 @@ server.use(function (req, res, next) {
   if (req.headers['access-control-request-method']) {
       res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
   }
-
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  res.setHeader('Content-Type', 'application/json');
 
   if (req.headers['access-control-request-headers']) {
       res.header('Access-Control-Allow-Headers', 'X-Requested-With');
