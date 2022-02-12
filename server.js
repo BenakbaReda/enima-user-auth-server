@@ -18,7 +18,7 @@ server.db = router.db
 server.use(function (req, res, next) {
   'use strict';
 
-  res.header('Access-Control-Allow-Origin', origineServer ); //'https://enima-eshopping.herokuapp.com');
+  res.header('Access-Control-Allow-Origin', origineServer[0] ); //'https://enima-eshopping.herokuapp.com');
 
   if (req.headers['access-control-request-method']) {
       res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
