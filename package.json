@@ -4,7 +4,7 @@
   "description": "Simple json server auth with jwt database to deploy to the host of your choice",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js --prod"
   },
   "keywords": [
     "json-server ,wt-auth ,heroku, node, REST API"
