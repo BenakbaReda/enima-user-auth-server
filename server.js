@@ -29,7 +29,7 @@ const middlewares = jsonServer.defaults({
     });
 
 const port = process.env.PORT || 3001;
-const origineServer_Prod= ['https://enima-eshopping.herokuapp.com', '*' ];
+const origineServer_Prod= ['https://enima-eshopping.herokuapp.com' ];
 // /!\ Bind the router db to the app
 server.db = router.db
 
