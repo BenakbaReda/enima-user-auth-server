@@ -60,5 +60,6 @@ server.use(middlewares);
 server.use(router);
 
 server.listen(port,() => {
-  console.log('JSON Server is running')
+  console.log('Access-Control-Allow-Origin  Url :' + origineServer[usedIdx])
+  console.log('JSON Server is running , and listen to port :' + port)
 }) 

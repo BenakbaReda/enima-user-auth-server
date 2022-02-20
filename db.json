@@ -1,11 +1,58 @@
 {
   "users": [
     {
-      "email": "reda_amine@ssenimashoping.com",
-      "password": "$2a$10$scrVtRzpvkkhXmwWKkL9u./cDcj1ZHCaLE2VHWjwvOOcJwdxjj7Gm",
+      "id": 1,
+      "userName": "reda_amine",
+      "email": "reda_amine@enimashoping.com",
+      "password": "$2a$10$k3NSQO58CRZAB84RdngkkOEvtyt9C9rq.BaWgxYBPVajfDM4HHVAS",
+      "firstName": "reda",
+      "lastName": "ader",
+      "phone": "05405069350",
+      "role": "Admin"
+    },
+    {
+      "id": 2,
+      "userName": "reda_amine1",
+      "email": "reda_amine1@enimashoping.com",
+      "password": "$2a$10$9ydmJc/A5q/qjIUTjiAZBurOnG8us6dnodeQrVNUgRQLP3js/n1uu",
+      "firstName": "reda",
+      "lastName": "ader",
+      "phone": "05405069351",
+      "role": "Manager"
+    },
+    {
+      "id": 3,
+      "userName": "reda_amine2",
+      "email": "reda_amine2@enimashoping.com",
+      "password": "$2a$10$cIevjkeD31/guEWZb/IVH.SP6IpkSHb8kI0XSBkZh0SDI/nTD1Iem",
+      "firstName": "reda",
+      "lastName": "ader",
+      "phone": "05405069352",
+      "role": "User"
+    },
+    {
+      "email": "reda_amine147@enimashoping.com",
+      "password": "$2a$10$wPCwlb.UXJYAj6H4U9rDs.Q7e5tqnj9l6ihigmZbKax8lWJxu.dQG",
       "username": "reda_amine",
       "phone": "0540506935",
-      "id": 1
+      "id": 4
+    }
+  ],
+  "Roles": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "label": "Administrator"
+    },
+    {
+      "id": 2,
+      "name": "User",
+      "label": "User"
+    },
+    {
+      "id": 3,
+      "name": "Manager",
+      "label": "Manager"
     }
   ]
 }
